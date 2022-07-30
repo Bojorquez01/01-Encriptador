@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    background: #F3F5FC;
+}
+body{
+    margin: 0;
+    font-size: 12px;
+}
+
+header,
+.left,
+.right,
+.alert,
+.buttons,
+.copy-camp,
+footer{
+    border: 1px solid #F3F5FC;
+    padding: 10px;
+    color: #000000;
+    font-size: 22px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(1px,auto);
+    grid-gap: 10px 8px;
+    grid-template-areas: 
+    "hea hea hea hea"
+    "lef lef rig rig"
+    "ale ale rig rig"
+    "but but cop cop"
+    "foo foo foo foo";
+}
+
+.container > header{
+    grid-area: hea;
+}
+.container > .left{
+    grid-area: lef;
+}
+.container > .right{
+    grid-area: rig;
+}
+.container > .alert{
+    grid-area: ale;
+}
+.container > .buttons{
+    grid-area: but;
+}
+.container > .copy-camp{
+    grid-area: cop;
+}
+.container > footer{
+    grid-area: foo;
+}
+
+header{
+    margin-top: 10px;
+}
+.title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: darkblue;
+    margin-top: 1px;
+}
+.area{
+    width: 90%;
+    height: 300px;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+    color: #0A3871;
+    border: none;
+    margin-left: 60px;
+    margin-top: 2px;
+    appearance: none;
+    outline: none;
+    display: flex;
+    align-items: flex-start;
+}
+.right{
+    margin: 10px;
+    border-radius: 24px;
+    background: #FFFFFF;
+    width: 90%;
+    height: 95%;
+}
+.encrypt{
+    font-weight: bold;
+    font-size: 60px;
+    background-color: #FFFFFF;
+    display: none;
+}
+.decrypt{
+    font-weight: bold;
+    font-size: 60px;
+    background-color: #FFFFFF;
+    display: none;
+}
+.text-result{
+    background-color: #FFFFFF;
+    text-align: center;
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+}
+.img-doll{
+    width: 336px;
+    height: 304px;
+    margin: 2px 180px 0 ;
+}
+.h3{
+    text-align: center;
+    margin-top: 1px;
+}
+.p{
+    text-align: center;
+}
+.background{
+    background: #FFFFFF;
+}
+.copy-camp{
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 24px;
+}
+.img-alert{
+    margin-left: 70px;
+}
+.buttons{
+    text-align: center;
+}
+.btn-encrypt,.btn-decrypt,.btn-clean,.btn-copy{
+    width: 20%;
+    border-radius: 24px;
+}
+.btn-encrypt{
+    background: darkblue;
+    color: #FFFFFF;
+}
+.btn-decrypt{
+    background:#FFFFFF;
+    color: darkblue;
+    margin-left: 40px;
+}
+.btn-clean{
+    background: red;
+    color: #FFFFFF;
+    margin-left: 40px;
+    margin-top: 2px;
+}
+#copy{
+    visibility: hidden;
+}
+footer{
+    text-align: center;
+    margin-top: 1px;
+}
+.git{
+    width: 50px;
+    border: 1px solid #F3F5FC;
+}
+.lin{
+    width: 50px;
+    border: 1px solid #F3F5FC;
+}
+.img-git{
+    width: auto;
+    height: 40px;
+    border: 1px solid #F3F5FC;
+}
+.img-lin{
+    width: auto;
+    height: 40px;
+    border: 1px solid #F3F5FC;
+    margin-left: 20px;
+}
